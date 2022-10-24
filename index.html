@@ -5,25 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <script src="./main.js"></script>
+    <script src="./js/main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>Blog application</h1>
-        <form action="">
-            <input type="text" placeholder="Title">
-            <input type="text" placeholder="Image">
-            <input type="date">
-            <select name="" id="">
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-            </select>
-            <!-- <input type="" placeholder="Select image"> -->
-            <textarea name="" id="" cols="30" rows="10" placeholder="Open your mind"></textarea>
-            <button>Create</button>
+    
+        <form id="createPost" class="flex flex-col card align-start">
+          <input type="text" placeholder="Title" id="title">
+          <input type="url" placeholder="Image" id="image">
+          <input type="date" placeholder="Date" id="date">
+          <select name="author" id="author">
+            <option selected disabled value="">Select author</option>
+            <option value="1">Jame Bond</option>
+            <option value="2">Serbentautas</option>
+            <option value="3">Severijus Klaida</option>
+          </select>
+          <textarea name="body" id="body" placeholder="Open your mind"></textarea>
+          <button type="submit">Create</button>
         </form>
-    </div>
+    
+        <main>
+          <h2>Our posts</h2>
+          <div id="postsContainer">
+            <!-- <div class="card post">
+              <img src="https://picsum.photos/id/1019/5472/3648" alt="sdsd">
+              <h3 class="post__title">trtrt</h3>
+              <h4 class="post__author">Autorius: </h4>
+              <p class="post__date">dsds</p>
+              <p class="post__text">sdsd</p>
+            </div> -->
+          </div>
+        </main>
+    
+    
+    
+      </div>
 </body>
 </html>
